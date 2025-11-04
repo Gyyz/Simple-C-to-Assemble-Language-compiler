@@ -1,0 +1,41 @@
+<FuncDef> -> <DecriAX> <Type> <Variables> ( <ParaDecl> ) { <FuncBody> }
+<DecriAX> -> <Decribe> <DecriAX> | $
+<Decribe> -> describe
+<Type> -> type <GetAddr>
+<GetAddr> -> <AstAX> 
+<AstAX> -> <Asterisk> <AstAX> | $
+<Asterisk> -> *
+<Variables> -> <Identifier> <ArraySub>
+<Identifier> -> id
+<ArraySub> -> [ <Factor> ] | $
+<Factor> -> ( <Expression> ) | <Variables> | <Digit>
+<Digit> -> digit
+<Expression> -> <Element> <Item>
+<Element> -> <Factor> <FactorRecur>
+<FactorRecur> -> * <Factor> <FactorRecur> | / <Factor> <FactorRecur> | $
+<Item> -> + <Element> <Item> | - <Element> <Item> | $
+<ParaDecl> -> <Statement> <StatementAX> | $
+<Statement> -> <DecriAX> <Type> <Variables> <OrValue>
+<OrValue> -> = <RightValue> | $
+<RightValue> -> <Expression> | { <ValueSet> }
+<ValueSet> -> <Digit> <DigitAX>
+<DigitAX> -> , <Digit> <DigitAX> | $
+<StatementAX> -> , <Statement> <StatementAX> | $
+<FuncBody> -> <StatementStaAX> <FuncBodyAX>
+<StatementStaAX> -> <StatementSta> <StatementStaAX> | $
+<StatementSta> -> <Statement> ;
+<FuncBodyAX> -> <ValueFunc> <FuncBodyAX> | <forAcc> <FuncBodyAX> | <CondiSta> <FuncBodyAX> | <FuncReturn> <FuncBodyAX> | $
+<ValueFunc> -> <Variables> <ValueOrFuncUse>
+<ValueOrFuncUse> -> = <RightValue> ; | ( <ParaList> ) ;
+<ParaList> -> <Para> <ParaAX>
+<ParaAX> -> , <Para> <ParaAX> | $
+<Para> -> <Identifier> | <Digit> | <String>
+<String> -> string
+<forAcc> -> for ( <ValueFunc> <LogicalExpression> ; <TailExpression> ) { <FuncBody> }
+<LogicalExpression> -> <Expression> <LogicalOpert> <Expression>
+<LogicalOpert> -> < | > | == | !=
+<TailExpression> -> <Variables> <TailOpert>
+<TailOpert> -> ++ | --
+<CondiSta> -> if ( <LogicalExpression> ) { <FuncBody> } <ElseSta>
+<ElseSta> -> else { <FuncBody> } | $
+<FuncReturn> -> return <Factor> ;

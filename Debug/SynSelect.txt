@@ -1,0 +1,71 @@
+
+************************************Select¼¯******************************
+
+Select[1]=describe type
+Select[2]=describe
+Select[3]= type
+Select[4]=describe
+Select[5]= type
+Select[6]=    *   id
+Select[7]=    *
+Select[8]=   id
+Select[9]=    *
+Select[10]=   id
+Select[11]=   id
+Select[12]=    [
+Select[13]=    (    ]    )    ,    ;    <    >   ==   !=    +    -    *    /    =   ++   --
+Select[14]=    (
+Select[15]=   id
+Select[16]=digit
+Select[17]=digit
+Select[18]=    (   iddigit
+Select[19]=    (   iddigit
+Select[20]=    *
+Select[21]=    /
+Select[22]=    )    ,    ;    <    >   ==   !=    +    -
+Select[23]=    +
+Select[24]=    -
+Select[25]=    )    ,    ;    <    >   ==   !=
+Select[26]=describe type
+Select[27]=    )
+Select[28]=describe type
+Select[29]=    =
+Select[30]=    )    ,    ;
+Select[31]=    (   iddigit
+Select[32]=    {
+Select[33]=digit
+Select[34]=    ,
+Select[35]=    }
+Select[36]=    ,
+Select[37]=    )
+Select[38]=describe type   id  for   if    }
+Select[39]=describe type
+Select[40]=    }   id  for   if
+Select[41]=describe type
+Select[42]=   id
+Select[43]=  for
+Select[44]=   if
+Select[45]=
+Select[46]=    }
+Select[47]=   id
+Select[48]=    =
+Select[49]=    (
+Select[50]=   iddigitstring
+Select[51]=    ,
+Select[52]=    )
+Select[53]=   id
+Select[54]=digit
+Select[55]=string
+Select[56]=string
+Select[57]=  for
+Select[58]=    (   iddigit
+Select[59]=    <
+Select[60]=    >
+Select[61]=   ==
+Select[62]=   !=
+Select[63]=   id
+Select[64]=   ++
+Select[65]=   --
+Select[66]=   if
+Select[67]= else
+Select[68]=    }   id  for   if

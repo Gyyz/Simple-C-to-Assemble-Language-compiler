@@ -1,0 +1,42 @@
+************************************Follow集******************************
+Follow[<函数定义>] =    #
+Follow[<修饰词闭包>] = type
+Follow[<类型>] =   id
+Follow[<变量>] =    (    ]    )    ,    ;    <    >   ==   !=    +    -    *    /    =   ++   --
+Follow[<参数声明>] =    )
+Follow[<函数块>] =    }
+Follow[<修饰词>] = typedescribe
+Follow[<取地址>] =   id
+Follow[<星号闭包>] =   id
+Follow[<星号>] =   id    *
+Follow[<标志符>] =    (    ]    )    ,    ;    <    >   ==   !=    +    -    *    /    =   ++   --    [
+Follow[<数组下标>] =    (    ]    )    ,    ;    <    >   ==   !=    +    -    *    /    =   ++   --
+Follow[<因式>] =    ]    )    ,    ;    <    >   ==   !=    +    -    *    /
+Follow[<表达式>] =    )    ,    ;    <    >   ==   !=
+Follow[<数字>] =    ]    )    ,    ;    <    >   ==   !=    +    -    *    /    }
+Follow[<因子>] =    )    ,    ;    <    >   ==   !=    +    -
+Follow[<项>] =    )    ,    ;    <    >   ==   !=
+Follow[<因式递归>] =    )    ,    ;    <    >   ==   !=    +    -
+Follow[<声明>] =    )    ,    ;
+Follow[<声明闭包>] =    )
+Follow[<赋初值>] =    )    ,    ;
+Follow[<右值>] =    )    ,    ;
+Follow[<多个数据>] =    }
+Follow[<数字闭包>] =    }
+Follow[<声明语句闭包>] =    }   id  for   if
+Follow[<函数块闭包>] =    }
+Follow[<声明语句>] =    }   id  for   ifdescribe type
+Follow[<赋值函数>] =    }   id  for   if    (digit
+Follow[<for循环>] =    }   id  for   if
+Follow[<条件语句>] =    }   id  for   if
+Follow[<函数返回>] =    }   id  for   if
+Follow[<赋值或函数调用>] =    }   id  for   if    (digit
+Follow[<参数列表>] =    )
+Follow[<参数>] =    )    ,
+Follow[<参数闭包>] =    )
+Follow[<字符串>] =    )    ,
+Follow[<逻辑表达式>] =    ;    )
+Follow[<后缀表达式>] =    )
+Follow[<逻辑运算符>] =    (   iddigit
+Follow[<后缀运算符>] =    )
+Follow[<否则语句>] =    }   id  for   if

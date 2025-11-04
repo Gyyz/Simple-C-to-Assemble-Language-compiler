@@ -1,0 +1,44 @@
+
+************************************First集******************************
+
+First[<函数定义>] =describe type
+First[<修饰词闭包>] =describe    $
+First[<类型>] = type
+First[<变量>] =   id
+First[<参数声明>] =describe type    $
+First[<函数块>] =describe type   id  for   if    $
+First[<修饰词>] =describe
+First[<取地址>] =    *    $
+First[<星号闭包>] =    *    $
+First[<星号>] =    *
+First[<标志符>] =   id
+First[<数组下标>] =    [    $
+First[<因式>] =    (   iddigit
+First[<表达式>] =    (   iddigit
+First[<数字>] =digit
+First[<因子>] =    (   iddigit
+First[<项>] =    +    -    $
+First[<因式递归>] =    *    /    $
+First[<声明>] =describe type
+First[<声明闭包>] =    ,    $
+First[<赋初值>] =    =    $
+First[<右值>] =    (   iddigit    {
+First[<多个数据>] =digit
+First[<数字闭包>] =    ,    $
+First[<声明语句闭包>] =describe type    $
+First[<函数块闭包>] =   id  for   if    $
+First[<声明语句>] =describe type
+First[<赋值函数>] =   id
+First[<for循环>] =  for
+First[<条件语句>] =   if
+First[<函数返回>] =
+First[<赋值或函数调用>] =    =    (
+First[<参数列表>] =   iddigitstring
+First[<参数>] =   iddigitstring
+First[<参数闭包>] =    ,    $
+First[<字符串>] =string
+First[<逻辑表达式>] =    (   iddigit
+First[<后缀表达式>] =   id
+First[<逻辑运算符>] =    <    >   ==   !=
+First[<后缀运算符>] =   ++   --
+First[<否则语句>] = else    $
